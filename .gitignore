@@ -5,6 +5,13 @@
 /.pnp
 .pnp.js
 
+# yarn (berry / pnp) - excluded entirely, not doing zero-installs
+.yarn/
+.pnp.cjs
+.pnp.loader.mjs
+.yarnrc.yml
+yarn.lock
+
 # testing
 /coverage
 
@@ -21,3 +28,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#history
+.history
