@@ -11,5 +11,9 @@
 }
 
 .swiper-slide img {
-	width: 100%;
+	max-width: 90%;
+	max-height: 80vh;
+	width: auto;
+	height: auto;
+	object-fit: contain;
 }

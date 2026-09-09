@@ -14,6 +14,8 @@ import Invitation from '@sections/Invitation'
 import Calendar from '@sections/Calendar'
 import Map from '@sections/Map'
 import Contact from '@sections/Contact'
+import Share from '@sections/Share'
+import AttendCountModal from './components/AttendCountModal'
 
 const cx = classNames.bind(styles)
 
@@ -80,7 +82,10 @@ function App() {
 			<Calendar date={date} />
 			<Map location={location} />
 			<Contact groom={groom} bride={bride} />
-			{JSON.stringify(wedding)}
+			<Share groomName={groom.name} brideName={bride.name} date={date} />
+
+			<AttendCountModal wedding={wedding} />
+			{/* {JSON.stringify(wedding)} */}
 		</div>
 	)
 }
